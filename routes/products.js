@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const db = require('../db'); // lidhja me databazën
 
-// CREATE - Shto një produkt të ri
+// CREATE - Shton një produkt të ri
 router.post('/', (req, res) => {
   const { name, price } = req.body;
   const sql = 'INSERT INTO products (name, price) VALUES (?, ?)';
@@ -21,7 +21,7 @@ router.get('/', (req, res) => {
   });
 });
 
-// UPDATE - Përditëso një produkt ekzistues
+// UPDATE - Përditëson një produkt ekzistues
 router.put('/:id', (req, res) => {
   const { name, price } = req.body;
   const { id } = req.params;
@@ -32,7 +32,7 @@ router.put('/:id', (req, res) => {
   });
 });
 
-// DELETE - Fshij një produkt
+// DELETE - Fshin një produkt
 router.delete('/:id', (req, res) => {
   const { id } = req.params;
   const sql = 'DELETE FROM products WHERE id = ?';
