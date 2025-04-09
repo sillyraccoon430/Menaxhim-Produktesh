@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const db = require('../db'); // lidhja me databazën
 
-// CREATE - Shto një porosi të re
+// CREATE - Shton një porosi të re
 router.post('/', (req, res) => {
   const { product_id, quantity, total_price } = req.body;
   const sql = 'INSERT INTO orders (product_id, quantity, total_price) VALUES (?, ?, ?)';
@@ -21,7 +21,7 @@ router.get('/', (req, res) => {
   });
 });
 
-// UPDATE - Përditëso një porosi ekzistuese
+// UPDATE - Përditëson një porosi ekzistuese
 router.put('/:id', (req, res) => {
   const { product_id, quantity } = req.body;
   const { id } = req.params;
@@ -32,7 +32,7 @@ router.put('/:id', (req, res) => {
   });
 });
 
-// DELETE - Fshij një porosi
+// DELETE - Fshin një porosi
 router.delete('/:id', (req, res) => {
   const { id } = req.params;
   const sql = 'DELETE FROM orders WHERE id = ?';
