@@ -16,3 +16,13 @@ Ky projekt është një aplikacion i thjeshtë backend i ndërtuar me Node.js, E
 ```bash
 git clone https://github.com/sillyraccoon430/Menaxhim-Produktesh
 
+## Si të nisesh projekti
+
+```bash
+npm install
+npm start
+
+Faleminderit
+
+EMILJANO AZIZI
+
