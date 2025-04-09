@@ -14,4 +14,5 @@ Ky projekt është një aplikacion i thjeshtë backend i ndërtuar me Node.js, E
 1. Klono këtë repository:
 
 ```bash
-git clone [linku i githubit kur ta hedhim]
+git clone https://github.com/sillyraccoon430/Menaxhim-Produktesh
+
