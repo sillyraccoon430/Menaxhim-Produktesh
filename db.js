@@ -3,7 +3,7 @@ const mysql = require('mysql2');
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: '1234',     // Shkruaj passwordin tënd nëse ke
+  password: '1234',     
   database: 'shop_db'
 });
 
