@@ -24,5 +24,5 @@ npm start
 
 Faleminderit
 
-EMILJANO AZIZI
+E.A
 
